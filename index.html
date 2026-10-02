@@ -12,15 +12,35 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <symbol id="icon-heart" viewBox="0 0 24 24">
+        <path d="M12 21.2 3.1 12.4C-2.8 6.5 5.1-1.3 11 4.5l1 1 1-1c5.9-5.8 13.8 2 7.9 7.9Z" />
+      </symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24">
+        <path d="m12 1 1.7 7.3 6.8-4.8-4.8 6.8L23 12l-7.3 1.7 4.8 6.8-6.8-4.8L12 23l-1.7-7.3-6.8 4.8 4.8-6.8L1 12l7.3-1.7-4.8-6.8 6.8 4.8Z" />
+      </symbol>
+      <symbol id="icon-sparkle" viewBox="0 0 24 24">
+        <path d="M12 1.5 14.8 9.2 22.5 12l-7.7 2.8L12 22.5l-2.8-7.7L1.5 12l7.7-2.8Z" />
+      </symbol>
+      <symbol id="icon-arrow-up-right" viewBox="0 0 24 24">
+        <path d="M5 19 19 5M9 5h10v10" />
+      </symbol>
+      <symbol id="icon-arrow-up" viewBox="0 0 24 24">
+        <path d="M12 20V4m-6 6 6-6 6 6" />
+      </symbol>
+      <symbol id="icon-play" viewBox="0 0 24 24">
+        <path d="m8 5 11 7-11 7Z" />
+      </symbol>
+    </svg>
     <a class="skip-link" href="#main">Ugrás a tartalomra</a>
 
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Tasi és Napsi – az oldal teteje">
-        <span>T</span><span class="brand-heart" aria-hidden="true">♥</span><span>N</span>
+        <span>T</span><svg class="icon brand-heart" aria-hidden="true" focusable="false"><use href="#icon-heart" /></svg><span>N</span>
       </a>
       <nav aria-label="Fő navigáció">
         <a href="#uzenet">Üzenetünk</a>
-        <a class="nav-film" href="#video">A videó <span aria-hidden="true">↗</span></a>
+        <a class="nav-film" href="#video">A videó <svg class="icon icon-stroke icon-arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right" /></svg></a>
       </nav>
     </header>
 
@@ -29,9 +49,9 @@
         <div class="hero-copy">
           <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Egy kis meglepetés, csak nektek</p>
           <h1 id="hero-title">Tasi <span class="ampersand">&</span><br />Napsi<span class="period">.</span></h1>
-          <div class="hero-rule" aria-hidden="true"><span>✳</span></div>
+          <div class="hero-rule" aria-hidden="true"><svg class="icon"><use href="#icon-star" /></svg></div>
           <p class="hero-lead">Két ember, egy közös történet — és még annyi szép fejezet vár rátok.</p>
-          <a class="button button-primary" href="#video">Nézzétek meg a videót <span aria-hidden="true">↗</span></a>
+          <a class="button button-primary" href="#video">Nézzétek meg a videót <svg class="icon icon-stroke icon-arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow-up-right" /></svg></a>
           <p class="hero-note">Sok boldogságot kívánunk nektek!</p>
         </div>
 
@@ -40,15 +60,15 @@
           <figure class="hero-photo">
             <img src="./assets/tasi-napsi.jpg" alt="Tasi és Napsi együtt, egy vízparti fotón" width="1125" height="844" fetchpriority="high" />
           </figure>
-          <div class="photo-seal" aria-hidden="true"><span>együtt<br />minden<br />szebb</span><span class="seal-heart">♥</span></div>
-          <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
-          <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+          <div class="photo-seal" aria-hidden="true"><span>együtt<br />minden<br />szebb</span><svg class="icon seal-heart"><use href="#icon-heart" /></svg></div>
+          <svg class="icon sparkle sparkle-one" aria-hidden="true" focusable="false"><use href="#icon-star" /></svg>
+          <svg class="icon sparkle sparkle-two" aria-hidden="true" focusable="false"><use href="#icon-sparkle" /></svg>
           <p class="photo-caption">A történet legjobb része most kezdődik.</p>
         </div>
       </section>
 
       <div class="ribbon" aria-hidden="true">
-        <div class="ribbon-inner">Sok boldogságot <span>✳</span> Tasi & Napsi <span>✳</span> Sok boldogságot <span>✳</span> Tasi & Napsi <span>✳</span></div>
+        <div class="ribbon-inner">Sok boldogságot <svg class="icon"><use href="#icon-star" /></svg> Tasi & Napsi <svg class="icon"><use href="#icon-star" /></svg> Sok boldogságot <svg class="icon"><use href="#icon-star" /></svg> Tasi & Napsi <svg class="icon"><use href="#icon-star" /></svg></div>
       </div>
 
       <section class="message-section" id="uzenet" aria-labelledby="message-title">
@@ -57,11 +77,11 @@
           <h2 id="message-title">Minden közös nap<br /><em>legyen egy új kaland.</em></h2>
         </div>
         <div class="message-body">
-          <span class="message-asterisk" aria-hidden="true">✳</span>
+          <svg class="icon message-asterisk" aria-hidden="true" focusable="false"><use href="#icon-star" /></svg>
           <p>Kedves Tasi és Napsi!</p>
           <p>Szívből kívánjuk, hogy a közös életetek tele legyen nevetéssel, apró meglepetésekkel és olyan pillanatokkal, amelyekre még évek múlva is mosolyogva gondoltok vissza.</p>
           <p>Legyetek mindig egymás biztos pontja és legjobb kalandjai. Ma ünneplünk benneteket — és mindazt, ami még előttetek áll.</p>
-          <p class="message-signature">Sok boldogságot! <span aria-hidden="true">♥</span></p>
+          <p class="message-signature">Sok boldogságot! <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-heart" /></svg></p>
         </div>
       </section>
 
@@ -79,25 +99,25 @@
             A böngésződ nem támogatja a videó lejátszását. <a href="./assets/tasi-napsi-video.mp4">A videót innen töltheted le.</a>
           </video>
           <button class="video-play" id="video-play" type="button" aria-label="Videó lejátszása" hidden>
-            <span class="play-icon" aria-hidden="true">▶</span>
+            <span class="play-icon" aria-hidden="true"><svg class="icon"><use href="#icon-play" /></svg></span>
             <span>Lejátszás</span>
           </button>
         </div>
-        <div class="film-footnote"><span>✳</span> Készítsd be a zsebkendőt, de inkább a popcornt, mert ha sírsz, még fel is pofozlak. Puszi <span>✳</span></div>
+        <div class="film-footnote"><svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-star" /></svg> Készítsd be a zsebkendőt, de inkább a popcornt, mert ha sírsz, még fel is pofozlak. Puszi <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-star" /></svg></div>
       </section>
 
       <section class="closing" aria-label="Záró jókívánság">
-        <span class="closing-flower" aria-hidden="true">✳</span>
+        <svg class="icon closing-flower" aria-hidden="true" focusable="false"><use href="#icon-star" /></svg>
         <p>Ma, holnap, mindig.</p>
         <h2>Sok Boldogságot Kívánunk!<br /><em>Anna és Jani</em></h2>
-        <span class="closing-heart" aria-hidden="true">♥</span>
+        <svg class="icon closing-heart" aria-hidden="true" focusable="false"><use href="#icon-heart" /></svg>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>T <span aria-hidden="true">♥</span> N</span>
+      <span>T <svg class="icon" aria-hidden="true" focusable="false"><use href="#icon-heart" /></svg> N</span>
       <p>Szeretettel, Anna és Jani</p>
-      <a href="#top">Vissza az elejére ↑</a>
+      <a href="#top">Vissza az elejére <svg class="icon icon-stroke footer-arrow" aria-hidden="true" focusable="false"><use href="#icon-arrow-up" /></svg></a>
     </footer>
   </body>
 </html>
