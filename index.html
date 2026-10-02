@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f6f1e8" />
+    <meta name="description" content="Egy kis meglepetés Tasinak és Napsinak: jókívánságok és egy közös videó az esküvőjükre." />
+    <title>Tasi & Napsi — Sok boldogságot!</title>
+    <link rel="icon" href="./assets/heart.svg" type="image/svg+xml" />
+    <link rel="preload" href="./assets/tasi-napsi.jpg" as="image" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Ugrás a tartalomra</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Tasi és Napsi – az oldal teteje">
+        <span>T</span><span class="brand-heart" aria-hidden="true">♥</span><span>N</span>
+      </a>
+      <nav aria-label="Fő navigáció">
+        <a href="#uzenet">Üzenetünk</a>
+        <a class="nav-film" href="#video">A videó <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span> Egy kis meglepetés, csak nektek</p>
+          <h1 id="hero-title">Tasi <span class="ampersand">&</span><br />Napsi<span class="period">.</span></h1>
+          <div class="hero-rule" aria-hidden="true"><span>✳</span></div>
+          <p class="hero-lead">Két ember, egy közös történet — és még annyi szép fejezet vár rátok.</p>
+          <a class="button button-primary" href="#video">Nézzétek meg a videót <span aria-hidden="true">↗</span></a>
+          <p class="hero-note">Sok boldogságot kívánunk nektek!</p>
+        </div>
+
+        <div class="hero-art">
+          <div class="photo-halo" aria-hidden="true"></div>
+          <figure class="hero-photo">
+            <img src="./assets/tasi-napsi.jpg" alt="Tasi és Napsi együtt, egy vízparti fotón" width="1125" height="844" fetchpriority="high" />
+          </figure>
+          <div class="photo-seal" aria-hidden="true"><span>együtt<br />minden<br />szebb</span><span class="seal-heart">♥</span></div>
+          <span class="sparkle sparkle-one" aria-hidden="true">✳</span>
+          <span class="sparkle sparkle-two" aria-hidden="true">✧</span>
+          <p class="photo-caption">A történet legjobb része most kezdődik.</p>
+        </div>
+      </section>
+
+      <div class="ribbon" aria-hidden="true">
+        <div class="ribbon-inner">Sok boldogságot <span>✳</span> Tasi & Napsi <span>✳</span> Sok boldogságot <span>✳</span> Tasi & Napsi <span>✳</span></div>
+      </div>
+
+      <section class="message-section" id="uzenet" aria-labelledby="message-title">
+        <div class="message-intro">
+          <p class="section-kicker">01 / Egy pár sor nektek</p>
+          <h2 id="message-title">Minden közös nap<br /><em>legyen egy új kaland.</em></h2>
+        </div>
+        <div class="message-body">
+          <span class="message-asterisk" aria-hidden="true">✳</span>
+          <p>Kedves Tasi és Napsi!</p>
+          <p>Szívből kívánjuk, hogy a közös életetek tele legyen nevetéssel, apró meglepetésekkel és olyan pillanatokkal, amelyekre még évek múlva is mosolyogva gondoltok vissza.</p>
+          <p>Legyetek mindig egymás biztos pontja és legjobb kalandjai. Ma ünneplünk benneteket — és mindazt, ami még előttetek áll.</p>
+          <p class="message-signature">Sok boldogságot! <span aria-hidden="true">♥</span></p>
+        </div>
+      </section>
+
+      <section class="film-section" id="video" aria-labelledby="film-title">
+        <div class="film-heading">
+          <div>
+            <p class="section-kicker section-kicker-light">02 / Egy kisfilm nektek</p>
+            <h2 id="film-title">Most pedig jöhet<br /><em>a közös mozi.</em></h2>
+          </div>
+          <p>Helyezkedjetek el kényelmesen.<br />Ez a nap rólatok szól.</p>
+        </div>
+        <div class="video-frame">
+          <video id="wedding-video" controls playsinline preload="metadata" poster="./assets/tasi-napsi.jpg" aria-label="Tasi és Napsi ajándékvideója">
+            <source src="./assets/tasi-napsi-video.mp4" type="video/mp4" />
+            A böngésződ nem támogatja a videó lejátszását. <a href="./assets/tasi-napsi-video.mp4">A videót innen töltheted le.</a>
+          </video>
+          <button class="video-play" id="video-play" type="button" aria-label="Videó lejátszása" hidden>
+            <span class="play-icon" aria-hidden="true">▶</span>
+            <span>Lejátszás</span>
+          </button>
+        </div>
+        <div class="film-footnote"><span>✳</span> Készítsd be a zsebkendőt, de inkább a popcornt, mert ha sírsz, még fel is pofozlak. Puszi <span>✳</span></div>
+      </section>
+
+      <section class="closing" aria-label="Záró jókívánság">
+        <span class="closing-flower" aria-hidden="true">✳</span>
+        <p>Ma, holnap, mindig.</p>
+        <h2>Sok Boldogságot Kívánunk!<br /><em>Anna és Jani</em></h2>
+        <span class="closing-heart" aria-hidden="true">♥</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>T <span aria-hidden="true">♥</span> N</span>
+      <p>Szeretettel, Anna és Jani</p>
+      <a href="#top">Vissza az elejére ↑</a>
+    </footer>
+  </body>
+</html>
